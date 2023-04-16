@@ -7,7 +7,7 @@ This is a PHP library for integrating Elena api
 Use the package manager [composer](https://pip.pypa.io/en/stable/) to install.
 
 ```bash
-composer install oscar-team/elena-php
+composer require oscar-team/elena-php
 ```
 
 ## Usage

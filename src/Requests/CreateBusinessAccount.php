@@ -21,7 +21,7 @@ class CreateBusinessAccount extends CustomRequest implements HasBody
 
     public function resolveEndpoint(): string
     {
-        return '/business-account';
+        return '/business-accounts';
     }
 
     protected function defaultBody(): array

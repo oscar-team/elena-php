@@ -28,12 +28,14 @@ abstract class CustomRequest extends Request
                 ->map(ErrorResponse::class, $source);
         }
 
-        if (isset($source['errors'])) {
-            return (new MapperBuilder())
-                ->enableFlexibleCasting()
-                ->allowPermissiveTypes()
-                ->mapper()
-                ->map(ValidationErrorResponse::class, $source);
+        if (array_key_exists('errors', $response->json())) {
+            if (isset($source['errors'])) {
+                return (new MapperBuilder())
+                    ->enableFlexibleCasting()
+                    ->allowPermissiveTypes()
+                    ->mapper()
+                    ->map(ValidationErrorResponse::class, $source);
+            }
         }
 
         try {
@@ -63,7 +65,7 @@ abstract class CustomRequest extends Request
             $errorMessages = $messages->errors();
 
             foreach ($errorMessages as $message) {
-                echo $message;
+                echo $message ;
             }
         }
     }

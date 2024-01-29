@@ -6,7 +6,7 @@ use CuyZ\Valinor\Mapper\Source\Source;
 use CuyZ\Valinor\MapperBuilder;
 use OscarTeam\ElenaPhp\Response\DataObjects\ErrorResponse;
 use OscarTeam\ElenaPhp\Response\DataObjects\RegistrationsSuccessResponse;
-use Saloon\Contracts\Response;
+use Saloon\Http\Response;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 

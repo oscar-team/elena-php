@@ -9,7 +9,7 @@ use CuyZ\Valinor\MapperBuilder;
 use OscarTeam\ElenaPhp\Response\DataObjects\ErrorResponse;
 use OscarTeam\ElenaPhp\Response\DataObjects\RegistrationSuccessResponse;
 use OscarTeam\ElenaPhp\Response\DataObjects\ValidationErrorResponse;
-use Saloon\Contracts\Response;
+use Saloon\Http\Response;
 use Saloon\Http\Request;
 
 abstract class CustomRequest extends Request

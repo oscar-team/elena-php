@@ -26,6 +26,15 @@ $connector->send($request)->dto(); // gives you response as an DTO Objects
 $connector->send($request)->json(); // gives uou response as an array
 ```
 
+## Testing
+
+The project uses [Pest](https://pestphp.com/) (PHPUnit 12) and requires PHP 8.4+.
+
+```bash
+composer install
+./vendor/bin/pest
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

@@ -3,12 +3,13 @@
     "description": "Elena API integration with php",
     "type": "library",
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "cuyz/valinor": "^1.3",
         "saloonphp/saloon": "^3.0"
     },
     "require-dev": {
-        "pestphp/pest": "^2.4"
+        "phpunit/phpunit": "^12.0",
+        "pestphp/pest": "^4.0"
     },
     "license": "MIT",
     "autoload": {
